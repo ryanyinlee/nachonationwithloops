@@ -66,15 +66,28 @@ function starvingOrphans() {
 
 function dipslay() {
 
-    var guacrate = document.getElementById('diprate').value;       
+    var guacrate = document.getElementById('diprate').value;
 
+    if (guacrate > 5) {
+        document.getElementById ('display1').innerHTML ='Please enter a number from 0 to 5.';
+    }
+    else if (guacrate < 0) {
+        document.getElementById ('display1').innerHTML ='Please enter a number from 0 to 5.';
+    }
+    else {
+        let num = 1;
         while (guacrate > 0) {
-            
-            let num = 1;
-            num++;
+                       
             document.getElementById ('display' + num).innerHTML ='<img src="https://raw.githubusercontent.com/ryanyinlee/nachonationwithloops/main/pexels-photo-8479389.jpeg" width="128" height="136"/>';
-            guacrate --;
+            document.getElementById ('numeric' + num).innerHTML =' ' + num + ' ';           
+            ++num;
+            --guacrate;
         }
+
+    }
+
+
+ 
 
         
 
