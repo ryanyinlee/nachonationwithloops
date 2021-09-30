@@ -61,3 +61,24 @@ function starvingOrphans() {
     }
 
     document.getElementById('platesSubmit').addEventListener('click', metric);
+
+   
+
+function dipslay() {
+
+    var guacrate = document.getElementById('diprate').value;       
+
+        while (guacrate > 0) {
+            
+            let num = 1;
+            num++;
+            document.getElementById ('display' + num).innerHTML ='<img src="https://raw.githubusercontent.com/ryanyinlee/nachonationwithloops/main/pexels-photo-8479389.jpeg" width="128" height="136"/>';
+            guacrate --;
+        }
+
+        
+
+
+           
+       
+    }

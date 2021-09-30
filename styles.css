@@ -72,3 +72,12 @@ body {
     clear: both;
     display: table;
   }
+
+  .row {
+    display: flex;
+}
+
+  .column {
+    flex: 20%;
+    padding: 10px;
+  }
